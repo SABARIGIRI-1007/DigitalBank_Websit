@@ -1,0 +1,101 @@
+body{
+    margin: 0px;
+}
+.head{
+    width:100%;
+    background-color:#28afd1e5;
+    margin: 0px;
+    padding:30px 0px;
+}
+.container{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    height:650px;
+
+}
+.left-container{
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.reight-container{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left:120px 
+}
+.reight-container h2{
+    color:#28afd1e5;
+    font-size: 35px;
+    margin-top: 30px;
+    margin-bottom:0px;
+}
+.reight-container p{
+    color: rgb(96, 96, 96);
+    margin-top: 3px;
+}
+label.userid,.userpassword,.userCaptcha{
+    display: inline-block;
+    margin-top:20px;
+    margin-bottom:10px;
+}
+#mailid,#pass,#input-captcha{
+    padding:5px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(96, 96,96);
+    width:calc(100% - 100px);
+    font-size:15px;
+}
+#mailid,#pass,#input-captcha::placeholder{
+
+    background-color:white ;
+}
+#Captcha-text{
+    display :inline-block;
+    text-align: center;
+    position: relative;
+    background-image: url(../imges/captcha2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size:xx-large;
+    margin-left:30px;
+    margin-top:30px;
+    padding:20px;
+    width:300px;
+    color: #28afd1e5;
+    word-spacing:30px;
+}
+#refresh-captcha{
+    background-color: #28afd1e5;
+    margin-top:20px;
+    margin-left:10px;
+    vertical-align:middle;
+    border: 1px solid;
+    cursor: pointer;
+    padding:5px 8px;
+}
+.link{
+    display:block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #28afd1e5 ;
+}
+.bt{
+    text-align: center;
+    margin:20px 30px;
+    align-items: center;
+    width:400px;
+    padding:10px;
+    font-size: large;
+    border:5px;
+    border-radius:20px;
+    background-color: #28afd1e5;
+    cursor:pointer;
+}

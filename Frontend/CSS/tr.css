@@ -1,0 +1,234 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+.top-nav{
+    display:flex;
+    flex-direction: row;
+    background-color: #003366;
+    color: white;
+    padding:33px 20px;
+    position:static;
+}
+.top-nav .n1{
+    margin-right:30px;
+}
+.top-nav .n2{
+    margin-left: 500px;
+}
+.top-nav .links{
+    margin-left: 80px;
+}
+.n3 a{
+    margin-left: 40px;
+    color: white;
+    text-decoration: none;
+}
+.n3 a:hover{
+    text-decoration: underline;
+    
+}
+.n3 a:active{
+    color:#ffcc00;
+}
+.side-nav{
+    display: flex;
+    padding:25px 20px;
+    background-color: #ffcc00;
+}
+.side-nav a{
+    margin-left: 100px;
+    color: black;
+    font-size:large ;
+    text-decoration: none;
+
+}
+.side-nav a:hover{
+    color: #003366;
+}
+.side-nav a:active{
+    text-decoration: underline;
+}
+.main{
+    display: grid;
+    grid-template-columns:300px 1fr;
+}
+.main .main-nav{
+    display: inline;
+    height:560px;
+    margin-right: 50px;
+    border-right: 2px solid gray;
+    
+}
+.main-nav h2{
+    background-color: #003366;
+    padding: 10px;
+    color: white;
+    margin-top: 0px;
+}
+.main-nav a{
+    display: inline-block;
+    padding: 5px;
+    margin-bottom:20px;
+    color:gray;
+    font-size: large;
+    text-decoration: none;
+    margin-left:10px;
+}
+.main-nav a:hover{
+    color:#003366;
+    font-weight: bold;
+}
+.main-nav a:active{
+    text-decoration: underline;
+}
+.Trans_contant h2{
+    margin:30px 10px;
+    color: rgb(96,96,96);
+}
+.img a{
+    cursor: pointer;
+}
+.img a:hover img{
+    transform: scale(1.1);
+}
+.img a:active img{
+    transform: scale(0.9);
+}
+.img img{
+    height: 100px;
+    width: auto;
+    margin-bottom: 2px;
+    border: 2px solid #003366;
+    border-radius: 30px;
+}
+.img p{
+    margin-top: 2px;
+    color: rgb(96,96,96);
+    font-weight:500;
+}
+.neft,.rtgs{
+    margin-left:35px;
+}
+.img{
+    margin:50px;
+    margin-left: 100px;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,auto);
+    gap: 10px;
+    row-gap: 50px;
+    justify-content: center;
+}
+#color{
+    padding:100px;
+    background:linear-gradient(to right, #ffcc00,#ff9900,#f60);
+    margin-bottom: 0px;
+}
+#other_Account{
+    margin-top: 0px;
+    position: relative;
+    background:linear-gradient(to right, #ffcc00,#ff9900,#f60);
+}
+#other_Account h2{
+    text-align: center;
+    margin:50px;
+    margin-top: 0px;
+    color: #003366;
+    padding: 30px;
+    padding-top: 0px;
+}
+.transaction_data{
+    display: grid;
+    grid-template-rows:1fr;
+    margin-left: 100px;
+}
+.trans_submit div{
+    display: grid;
+    grid-template-columns: 200px 300px 200px;
+}
+.trans_submit{
+    display: grid;
+    grid-template-rows: 1fr;
+}
+.trans_submit label {
+    display: inline-block;
+    padding: 20px;
+}
+.trans_submit input{
+    width:350px;
+    height:25px;
+    margin-top:10px;
+}
+.trans_submit p {
+    display: inline-block;
+    width: 300px;
+    margin-left:180px;
+    color: rgb(96,96,96);
+}
+#other_Account button{
+    padding:10px 40px;
+    margin-left: 400px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    background-color:#003366;
+    color: white;
+    border: none;
+    border: 3px solid;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.succss_contant{
+    background-color:rgba(96,96,96,0.5);
+    margin-top: 0px;
+}
+#successfully{
+    align-items: center;
+    justify-content: center;
+    margin-left: 500px;
+    margin-right:500px;
+    margin-top:100px;
+    padding: 20px;
+    border:3px solid green;
+    border-radius: 10px;
+    background-color: white;
+
+}
+#successfully h2{
+    text-align: center;
+    color: green;
+}
+.Total{
+    color: green;
+}
+#successfully button{
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+#successfully button :hover {
+    transform: scale(1.2) rotate(10deg)
+}
+#successfully button:active{
+    transform: translateX(10px);
+}
+#Print{
+    margin-left: 30px;
+    background: black;
+    color: white;
+    margin: 5px 20px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+#Continue{
+    margin-left: 200px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+}
