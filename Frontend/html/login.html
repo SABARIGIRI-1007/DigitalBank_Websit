@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="Loginform.css">
+    <script src="../javascript/Data.js"></script>
+    <script src="../javascript/log.js" defer>
+    </script>
+</head>
+<body>
+    <div class="head"></div>
+    <div class="container">
+    <div class="left-container">
+        <img src="../imges/login.jpg" class="image">
+    </div>
+    <div class="reight-container">
+        <h2>Login</h2>
+        <p>Welcome, Please Login to your Internet Banking</p>
+        <form id="loginform">
+            <label class="userid">Email ID</label><br>
+            <input type="email" id="mailid" placeholder="Enter Email ID" required><br>
+
+            <label  class="userpassword">Password</label><br>
+            <input type="password" id="pass" placeholder="Enter Password" required>
+
+            <div class="captcha-container">
+                <label  class="userCaptcha">Enter the text shown in the image</label><br>
+                <input type="text" id="input-captcha" placeholder="Enter Captcha" required ><br>
+                <span id="Captcha-text"></span>
+                <button type="button" id="refresh-captcha">&#x21bb;</button>
+            </div>
+            <a href="#" class="link">Forget Possword?</a>
+            <button type="submit" class="bt">Login</button>
+        </form>
+        <p id="errorMessage"></p>
+    </div>
+    </div>
+    
+</body>
+</html>

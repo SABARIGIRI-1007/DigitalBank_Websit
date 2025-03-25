@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ADD ACCOUNT</title>
+    <link rel="stylesheet" href="add.css">
+</head>
+<body>
+    <div class="top_contant">
+    <div class="head">
+        <img src="../imges/Preview.png">  
+    </div>
+    <div class="nave"><h2>User Driven Registration - New User</h2></div>
+    </div>
+    <div class="form_contant">
+        <form type="submit" id="js_form">
+            <p class="form_p">Mandatory fields are marked with an aesterisk(*)</p>
+            <div class="Un">
+                <label class="l1">Holder Name</label>
+                <input type="text" id="js_name" class="I1" required>
+            </div>
+            <div class="Ac">
+                <label class="l2">Account Number<span>*</span></label>
+                <input type="text" id="js_account_no" class="I2" required>
+                <p>(Account number  is availabel in your  passbook and/or statemant of account)</p>
+            </div>
+            <div id="Cn">
+                <label class="l3">CIF Number<span>*</span></label>
+                <input type="text" id="js_Id" class="I3" required> 
+                <p>(CIF Number is availabel in  your passbook and/or Statement of Account)</p>
+            </div>
+            <div class="Fc">
+                <label class="l4">IFSC Code<span>*</span></label>
+                <input type="text" id="js_IFSC_no" class="I4" required>
+                <p>(Please enter 8 digit IFSC Code)</p>
+            </div>
+            <div class="Nc">
+                <label class="l5">Country</label>
+                <select id="js_country" class="I5">
+                    <option>India</option>
+                    <option>USA</option>
+                </select>
+            </div>
+            <div class="Mp">
+                <label class="l8">MPIN<span>*</span></label>
+                <input type="text" id="js_mpin" class="I9" required>
+                <p>(You creat a MPIN Possword For Transaction)</p>
+            </div>
+            <div class="Mn">
+                <label class="l6">Registered Mobile Number<span>*</span></label>
+                <select id="js_Mno" class="I61">
+                    <option>+91</option>
+                    <option>+1</option>
+                </select>
+                <input type="text" id="js_mobile" class="I7" required>
+                <p>(Please enter Mobile Number registered with Bank)</p>
+            </div>
+            <div class="captcha_all">
+                <label class="l7">Enter the text shown in the image<span>*</span></label>
+                <input type="text" id="js_input_captch" class="I8" required>
+                <span id="js_captcha"></span>
+            </div>
+            <button id="add">Submit</button>
+        </form>
+    </div>
+    <div class="foter">
+            <p class="f1">@ Blockchain Enabel Digital Banking<p>
+            <p class="f2">Privacy Statement | Disclosure | Terms of Service(Terms &Condition)</p>
+    </div>
+
+    <script src="../javascript/add.js"></script>
+</body>
+</html>

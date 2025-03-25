@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Home page
+        </title>
+        <link rel="stylesheet" href="home.css">
+    </head>
+    <body>
+        <div class="top-nav">
+            <div>Blockjain Banking</div>
+            <div class="links">
+                <div class="n1">
+                    <h2 id="user">Mr.SABARIGIRI M</h2>
+                </div>
+                <div class="n2">
+                    <a href="#">Home</a>
+                    <a href="#">Options</a>
+                    <a href="#">Sitemap</a>
+                    <a href="#">Dashboard</a>
+                    <a href="1.html">Logout</a>
+                </div>
+            </div>
+        </div>
+        <div class="main-nav">
+            <a href="#">My Accounts</a>
+            <a href="trans.html">Fund Transfer</a>
+            <a href="#">Bill Payment</a>
+            <a href="#">Govt/Tax Payments</a>
+            <a href="#">Value Added Services</a>
+        </div>
+        <div class="container">
+            <div class="sidebar">
+                <h3>My Accounts</h3>
+                <ul>
+                    <li><a href="#">Accounts</a></li>
+                    <li><a href="#" onclick="showTransactions()">Quick Transaction View</a></li>
+                    <li><a href="#" id="Statement">Statement of Accounts</a></li>
+                    <li><a href="#">Term Deposit Summary</a></li>
+                    <li><a href="#">e-Purse</a></li>
+                    <li><a href="#">Online Term Deposit</a></li>
+                    <li><a href="#">Nomination</a></li>
+                    <li><a href="#">PPF</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <div id="Acc">
+                <h2>Transaction History</h2>
+                <p><strong>Current Balance: ₹<span id="amount">1,251</span>.00 </strong></p>
+    
+                <table id="transactionTable">
+                    <thead>
+                        <tr>
+                            <th>Post Date</th>
+                            <th>Value Date</th>
+                            <th>Debit</th>
+                            <th>Credit</th>
+                            <th>Balance</th>
+                        </tr>
+                    </thead>
+                </div>
+                    <tbody>
+                    </tbody>
+                </table>
+                <button id="bt" style="display: none;">print</button>
+            </div>
+            <script src="..//javascript/Data.js"></script>
+            <script src="../javascript/home.js">
+            </script>
+    </body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>
+            Transaction
+        </title>
+        <link rel="stylesheet" href="tr.css">
+        <script src="../javascript/Data.js"></script>
+        <script src="../javascript/tr1.js" defer></script>
+    </head>
+    <body>
+        <div class="top-nav">
+            <div class="n1">Blockjain Banking</div>
+            <div class="n2" id="user">Mr.SABARIGIRI M</div>
+            <div class="links">
+                <div class="n3">
+                    <a href="#">home</a>
+                    <a href="#">Options</a>
+                    <a href="#">Sitemap</a>
+                    <a href="#">Dashboard</a>
+                    <a href="1.html">Logout</a>
+                </div>
+            </div>
+        </div>
+        <div class="side-nav">
+            <a href="home.html">My Accounts</a>
+            <a href="#">Fund Transfer</a>
+            <a href="#">Bill Payment</a>
+            <a href="#">Govt/Tax Payments</a>
+            <a href="#">Value Added Services</a>
+        </div>
+        <div class="main">
+        <div class="main-nav">
+            <h2 class="Tr-h1">Fund Transfer</h2>
+            <a href="#"  class="a1">To self Account</a><br>
+            <a href="#" >Other BEDB Account</a><br>
+            <h2>To other Bank Account</h2>
+            <a href="#" >IMPS</a><br>
+            <a href="#" >NEFT</a><br>
+            <a href="#" >RTGS</a><br>
+            <a href="#" >EASIPAY</a><br>
+            <a href="#" >BEDB Credit Card</a><br>
+            <a href="#" >V-Collect</a><br>
+        </div>
+        <div class="Trans_contant">
+            <h2> Fund Transfer - Dashboard</h2>
+            <div class="img">
+                <div>
+                <a>
+                <img src="../imges/wallet.png">
+                </a>
+                <p>To self Account</p>
+                </div>
+                <div>
+                <a href="#other_Account"><img src="../imges/bank.png"></a>
+                <p>other BEDB Account</p>
+                </div>
+                <div>
+                <a><img src="../imges/card.png"></a>
+                <p>BEDB Credit Card</p>
+                </div>
+                <div>
+                <a> <img src="../imges/mpin.png"></a>
+                <p>IMPS(24*7)</p>
+                </div>
+                <div>
+                <a><img src="../imges/NEFT.png"></a>
+                <p class="neft">NEFT</p>
+                </div>
+                <div>
+                <a><img src="../imges/trans.png"></a>
+                <p class="rtgs">RTGS</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="color">
+    </div>
+    <div id="other_Account">
+        <h2>Other BEDB Account</h2>
+        <div class="transaction_data">
+            <form class="trans_submit">
+                <div>
+                <labeL>User Name</labeL>
+                <input type="text" id="user_name" style="color: black;">
+                </div>
+                <div>
+                <label>User Account No:</label>
+                <input type="text" id="user_Account" Style="color:black ;">
+                </div>
+                <div>
+                <label>Transaction Ac No:</label>
+                <input type="text" id="trans_Ac">
+                <p>(Enyter 16 Digite Account NUmber)</p>
+                </div>
+                <div>
+                    <labeL>Resiver Name</labeL>
+                    <input type="text" id="Resive_name" style="color: black;">
+                    </div>
+                <div>
+                <label>amount:</label>
+                <input type="text" id="js_amount">
+                <p>(Enter Money greter than zero)</p>
+                </div>
+                <div>
+                <label>MPIN:</label>
+                <input type="text" id="js_mpin">
+                <p>(Enter Your six digite MIPN)</p>
+                </div>
+            </form>
+        </div>
+        <button><a href="#Succ" id="js_confirm">Confirm</a></button>
+    </div>
+    <div class="succss_contant" id="Succ" style="display:none;">
+    <div id="successfully">
+        <h2>Transaction Successfully</h2>
+        <p>you have sent mony</p>
+        <span>15/03/2025 12:30pm</span>
+        <div>
+            <h3>Sent to</h3>
+            <p>Sabari</p>
+            <p>3245XXXXXXXXXX</p>
+        </div>
+        <div>
+            <h3>Sent by</h3>
+            <p>Abi</p>
+            <p> 2345XXXXXXXXX</p>
+        </div>
+        <div>
+            <h3>500</h3>
+            <h4>Fee/Charge</h4>
+            <p>No charge</p>
+            <h3 class="Total">TOtal Amount</h3>
+            <h3> Rs.1765</h3>
+        </div>
+        <button id="Print" onclick="window.print()">Print Recipt</button>
+        <button id="Continue">Continue</button>
+    </div>
+    </div>
+   
+    </body>
+
+</html>
