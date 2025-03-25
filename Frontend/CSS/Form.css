@@ -1,1 +1,251 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Centers all text by default */
+  }
+  
+  /* Header Styles */
+  header {
+    display: flex;
+    font-size: 28px;
+    padding: 10px;
+    background-color: whitesmoke;
+    font-weight: bold;
+    align-items: center;
+    gap: 5px;
+    vertical-align: middle;
+  }
+  
+  header img {
+    margin-right: 10px;
+    border-radius: 40%;
+  }
+  
+  header a {
+    display: flex;
+    align-items: center;
+    margin: 0 50px;
+    text-decoration: wavy;
+    font-size: medium;
+  }
+  
+  /* Navigation Styles */
+  nav {
+    background-color: rgb(0, 187, 255);
+    padding: 20px;
+    font-size: 20px;
+  }
+  
+  nav a {
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    font-size: large;
+    text-decoration: none;
+    padding: 0 20px;
+  }
+  
+  /* Banner Styles */
+  .banner {
+    width:100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    background: #f8f9fa;
+    padding: 10px 0;
+  }
+  
+  .banner-images {
+    width:100%;
+    display: flex;
+    animation: scroll-marquee 10s linear infinite;
+    vertical-align: top;
+  }
+  
+  div.banner-images img {
+    width:500px;
+    height:300px;
+    margin-right: 20px;
+    object-fit: contain;
+    display: inline-block;
+    vertical-align:top;
 
+  }
+  
+  @keyframes scroll-marquee {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  /* Offers Section Styles */
+  .offers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .offer-box {
+    background-color: white;
+    margin: 15px;
+    padding: 20px;
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .offer-box h3 {
+    color: #301b70;
+    margin-bottom: 10px;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: rgb(0, 187, 255);
+    color: white;
+    padding: 20px;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  /* Item Section Styles */
+  .item {
+    background-color: rgb(0, 187, 255);
+    padding: 20px;
+    margin: 50px 0;
+    text-align: center;
+    color: white;
+  }
+  
+  .item h4 {
+    display: inline-block;
+    padding: 3px 5px;
+    color: black;
+    background-color: transparent;
+    border: 2px solid #5900ff;
+    letter-spacing: 1px;
+    margin: 5px 0;
+  }
+  
+  /* Account Section Styles */
+  .account {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .step {
+    background-color: #f4f4f4;
+    margin: 15px;
+    padding: 20px;
+    display: inline-block;
+    width: 320px;
+    border: 3px solid #6a0dad;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px;
+  }
+  
+  .account a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6a0dad;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+  }
+  
+  .step a {
+    display: inline-block;
+    text-decoration: underline;
+    margin-top: 3px;
+    color: #301b70;
+    background-color: #f4f4f4;
+  }
+  
+  /* Digit Section Styles */
+  .digit {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 50px 0;
+    overflow: hidden;
+  }
+  
+  .word {
+    text-align: left;
+    max-width: 400px;
+    flex: 1;
+    padding: 0 50px 0 100px;
+  }
+  
+  .word h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .word p {
+    font-size: large;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  
+  .word a {
+    display: inline-block;
+    border: 2px solid blue;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000;
+    border-radius: 5px;
+  }
+  
+  .image {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+  }
+  
+  .image img {
+    width: 512px;
+    height: 326px;
+    border-radius: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .digit {
+      flex-direction: column;
+      text-align: center;
+    }
+    .word {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+    .image img {
+      width: 100%;
+      max-width: 350px;
+    }
+    .account {
+      width: 90%;
+    }
+  }
+  
